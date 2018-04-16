@@ -2,7 +2,6 @@
 /**
  *  qq 群 签到脚本
  */
-
 $method = $argv[1];
 $skey = $argv[2];
 $uin = 'o0qq号';
@@ -72,9 +71,6 @@ class Sign
         if ($groups == NULL) return;
 
         $i = 1;
-        // 我就要签到水群！
-        $this->toSign('635727069');
-        printf('签到完成');die();
         foreach ($groups as $group) {
             $this->toSign($qun->groupid);
             printf("%d\t%s(%d)\t签到完成\r\n", $i++, $qun->groupname, $qun->groupid);
@@ -89,7 +85,7 @@ class Sign
                     'http' => [
                         'method'  => 'POST',
                         'header'  => $this->cookie,
-                        'content' => sprintf('bkn=%s&gallery_info={"category_id":9,"page":0,"pic_id":16}&template_id=2&gc=%s&client=2&lgt=41.696620&lat=123.431340&poi=大闫神家楼道口&text=姿势不对起来重睡', $this->g_tk, $qin)
+                        'content' => sprintf('bkn=%s&gallery_info={"category_id":9,"page":0,"pic_id":16}&template_id=2&gc=%s&client=2&lgt=41.696620&lat=123.431340&poi=碧桂园公园外&text=起床啊', $this->g_tk, $qin)
                     ]
                 ]
             )

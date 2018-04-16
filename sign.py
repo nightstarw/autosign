@@ -16,8 +16,8 @@ if sys.getdefaultencoding() != defaultencoding:
 data = urllib.urlopen("http://www.baidu.com").read()
 soup = BeautifulSoup(data, 'html.parser')
 #自行添加
-user = "user"
-password = "password"
+user = "百度账号名"
+password = "百度账号密码"
 TOKEN = ""
 TOKEN_URL = "https://passport.baidu.com/v2/api/?getapi&tpl=pp&apiver=v3"
 INDEX_URL = "http://www.baidu.com/"
