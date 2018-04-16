@@ -28,5 +28,5 @@
 4. crontab 设置您想要签到的时间
 
 ### 结果如下图
-![avatar](test.jepg)
+![avatar](test.jpeg)
 ![avatar](test2.png)
