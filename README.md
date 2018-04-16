@@ -10,14 +10,14 @@
 - xorg-x11-server-Xvfb(linux)
 
 ### 百度贴吧自动签到使用说明
-启动文件名：`sign.py`
+启动文件名：`sign.py` <br>
 0. 安装 `beautifulSoup`
 1. 修改19行 user = '百度账号'
 2. 修改20行 password = '百度密码'
 3. crontab 设置您想要签到的时间
 
 ### qq群自动签到使用说明
-启动文件名: `sign.sh`
+启动文件名: `sign.sh` <br>
 0. 首先安装 `selenium, firefox, xorg-x11-server-Xvfb`
   如果想设置开机自启动 Xvfb 在 `/etc/rc.local`中部署以下代码：
 `/usr/bin/Xvfb :6666 -screen 0 1024x768x24 &
